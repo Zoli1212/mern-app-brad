@@ -1,6 +1,10 @@
 const express = require('express')
 const dotenv = require('dotenv').config()
 
+const colors = require('colors')
+
+const connectDB = require('./config/db')
+
 const goalRoutes = require('./routes/goalRoutes')
 
 const { errorHandler } = require('./middleware/errorMiddleware')
@@ -12,6 +16,8 @@ app.use(express.json())
 
 app.use('/api/goals', goalRoutes)
 app.use(errorHandler)
+
+connectDB()
 
 
 
