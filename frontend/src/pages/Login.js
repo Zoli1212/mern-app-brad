@@ -1,17 +1,17 @@
 import React from 'react'
 import { useState, useEffect} from 'react'
-import { FaUser } from 'react-icons/fa'
+import { FaSignInAlt } from 'react-icons/fa'
 
 export const Login = () => {
 
     const [ formData, setFormData ] = useState({
-        name: '',
+       
         email: '',
         password: '',
-        password2: ''
+
     })
 
-    const { name, email, password, password2} = formData
+    const { email, password} = formData
 
 
     const onChange = (e) => {
@@ -28,17 +28,12 @@ export const Login = () => {
   return (
     <>
     <section className='heading'>
-        <h1><FaUser />Register</h1>
-        <p>Please create an account</p>
+        <h1><FaSignInAlt />Login</h1>
+        <p>Login and start setting goals</p>
     </section>
     <section className='form'>
-        <form>
-            <div className="form-group">
-
-            <input type="text" className="form-control" id="name" name="name" value={name} 
-            placeholder='Enter your name'
-            onChange={onChange} />
-            </div>
+        <form onSubmit={onSubmit}>
+            
             <div className="form-group">
 
             <input type="text" className="form-control" id="email" name="email" value={email} 
@@ -51,12 +46,7 @@ export const Login = () => {
             placeholder='Enter your password'
             onChange={onChange} />
             </div>
-            <div className="form-group">
-
-            <input type="password" className="form-control" id="password2" name="password2" value={password2} 
-            placeholder='Enter your password again'
-            onChange={onChange} />
-            </div>
+           
             <div className="form-group">
                 <button type="submit" className='btn btn-block'></button>
 

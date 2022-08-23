@@ -32,7 +32,7 @@ export const Register = () => {
         <p>Please create an account</p>
     </section>
     <section className='form'>
-        <form>
+        <form onSubmit={ onSubmit}>
             <div className="form-group">
 
             <input type="text" className="form-control" id="name" name="name" value={name} 
