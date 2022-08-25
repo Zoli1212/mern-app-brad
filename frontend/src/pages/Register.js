@@ -58,7 +58,7 @@ export const Register = () => {
             onChange={onChange} />
             </div>
             <div className="form-group">
-                <button type="submit" className='btn btn-block'></button>
+                <button type="submit" className='btn btn-block'>Register</button>
 
             </div>
           
