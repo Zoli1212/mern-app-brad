@@ -5,6 +5,7 @@ import { Dashboard } from './pages/Dashboard';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { Header } from './components/Header'
+import { ToastContainer} from 'react-toastify'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       
     </div>
     </Router>
+    <ToastContainer />
     </>
   );
 }

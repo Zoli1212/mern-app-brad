@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header className='header'>
         <div className="logo">
-            <Link to='/'>MERN project</Link>
+            <Link to='/'>MERN Final project</Link>
         </div>
 
         <ul>

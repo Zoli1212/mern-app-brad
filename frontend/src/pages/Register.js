@@ -1,6 +1,10 @@
 import React from 'react'
 import { useState, useEffect} from 'react'
+import { useSelector, useDispatch} from 'react-redux'
+import { useNavigate} from 'react-router-dom'
+import { toast} from 'react-toastify'
 import { FaUser } from 'react-icons/fa'
+import { register, reset} from '../features/auth/authSlice'
 
 export const Register = () => {
 
@@ -17,12 +21,16 @@ export const Register = () => {
     const onChange = (e) => {
         setFormData((prev) => ({...prev, [e.target.name]: e.target.value
 
+            
         }))
+        console.log(formData)
 
     }
 
     const onSubmit = e  => {
         e.preventDefault()
+
+        console.log('submitted')
     }
 
   return (

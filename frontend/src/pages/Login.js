@@ -19,10 +19,13 @@ export const Login = () => {
 
         }))
 
+        console.log(formData)
+
     }
 
     const onSubmit = e  => {
         e.preventDefault()
+        console.log('submitted')
     }
 
   return (
