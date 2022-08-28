@@ -11,6 +11,7 @@ export const GoalForm = () => {
 
     const onSubmit = e => {
         e.preventDefault()
+        console.log('goal form submitted')
 
         dispatch(createGoal({text}))
     }
@@ -18,7 +19,7 @@ export const GoalForm = () => {
     <section className='form'>
         <form onSubmit={onSubmit}>
             <div className="form-group">
-                <label htmlfor="text">Goal</label>
+                <label htmlFor="text">Goal</label>
                 <input type="text" name='text' id='text' value={text} onChange={(e) => setText(e.target.value)} />
             </div>
             <div className="form-group">
