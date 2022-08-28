@@ -23,7 +23,7 @@ export const Header = () => {
   return (
     <header className='header'>
         <div className="logo">
-            <Link to='/'>MERN Final project</Link>
+            <Link to='/'>MERN Final project Eduonix</Link>
         </div>
 
         <ul>
