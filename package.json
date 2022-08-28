@@ -1,6 +1,9 @@
 {
   "name": "mern-tutorial",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.14.0"
+  },
   "description": "Goalsetter app for youtube tutorial",
   "main": "server.js",
   "scripts": {
